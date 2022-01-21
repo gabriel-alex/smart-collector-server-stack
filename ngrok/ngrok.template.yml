@@ -1,0 +1,14 @@
+authtoken: ${NGROK_AUTH_TOKEN}
+web_addr: 0.0.0.0:4040
+update: false
+log: stdout
+region: eu
+tunnels:
+  grafana:
+    proto: http
+    addr: localhost:80
+    bind_tls: false
+  node-red:
+    proto: http
+    addr: localhost:1880
+    bind_tls: false

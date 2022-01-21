@@ -1,0 +1,18 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: SmartCollectorInfluxDB
+    orgId: 1
+
+datasources:
+  - name: SmartCollectorInfluxDB
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: http://influxdb:8086
+    password:
+    user: alex
+    database: smartcollector
+    typeLogoUrl: public/app/plugins/datasource/influxdb/img/influxdb_logo.svg
+    jsonData: 
+      httpMode: GET

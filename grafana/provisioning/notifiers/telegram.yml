@@ -1,0 +1,32 @@
+notifiers:
+  - name: Telegram Smart Collector channel
+    type: telegram
+    uid: oY-A5o2nk
+    org_id: 1
+    is_default: true
+    send_reminder: false
+    frequency: 1h
+    disable_resolve_message: false
+    # See `Supported Settings` section for settings supported for each
+    # alert notification type.
+    settings:
+      autoResolve: true
+      bottoken: 5076708816:AAGxa1wnUbOn5vJiq1pqj4U7rUUzcw9F8QM
+      chatid: "-739126876"
+      httpMethod: POST
+      severity: critical
+      uploadImage: false
+      # recipient: 'XXX'
+      # uploadImage: true
+      # token: 'xoxb' # legacy setting since Grafana v7.2 (stored non-encrypted)
+      # url: https://slack.com # legacy setting since Grafana v7.2 (stored non-encrypted)
+    # Secure settings that will be encrypted in the database (supported since Grafana v7.2). See `Supported Settings` section for secure settings supported for each notifier.
+    secure_settings:
+      bottoken: true
+      # token: 'xoxb'
+      # url: https://slack.com
+
+delete_notifiers:
+  - name: Telegram Smart Collector channel
+    uid: notifier1
+    org_id: 1
