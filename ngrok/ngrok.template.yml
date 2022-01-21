@@ -6,9 +6,9 @@ region: eu
 tunnels:
   grafana:
     proto: http
-    addr: localhost:80
+    addr: 172.28.1.3:3000
     bind_tls: false
   node-red:
     proto: http
-    addr: localhost:1880
+    addr: 172.28.1.4:1880
     bind_tls: false
